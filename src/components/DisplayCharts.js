@@ -2,9 +2,7 @@ import React, { Component } from 'react'
 import { PieChart } from 'react-minimal-pie-chart';
 
  class DisplayCharts extends Component {
-     constructor(props){
-         super(props);
-     }
+    
 
      calculateCompoundedIR(principalAmount, yearValue, interestRate){
 
@@ -18,7 +16,6 @@ import { PieChart } from 'react-minimal-pie-chart';
         let principalAmount = loanAmount
         let finalAmount = this.calculateCompoundedIR(principalAmount, yearValue,interestRate)
         let interestAmount = finalAmount - principalAmount
-        let totalPayments = 180
         let monthlyEMI = finalAmount/yearValue
         finalAmount = Math.trunc(finalAmount)
         interestAmount = Math.trunc(interestAmount)
